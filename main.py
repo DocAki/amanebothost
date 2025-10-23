@@ -502,7 +502,6 @@ if __name__ == "__main__":
     else:
         logging.error("❌ DISCORD_TOKEN not found. Make sure it's set in your environment variables.")
 
-# Keep-alive for Render (at the very end of your file)
 from flask import Flask
 import threading
 
@@ -520,10 +519,6 @@ def keep_alive():
     t.start()
 
 keep_alive()
-```
 
-Then update your `requirements.txt` to include:
-```
-flask
 
 
